@@ -6,3 +6,7 @@
 	path = datagestion
 	url = git@github.com:ptut-morpx/datagestion.git
 	branch = master
+[submodule "morpx"]
+	path = morpx
+	url = git@github.com:ptut-morpx/morpx.git
+	branch = master
