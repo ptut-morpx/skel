@@ -1,0 +1,8 @@
+[submodule "swissround"]
+	path = swissround
+	url = git@github.com:ptut-morpx/swissround.git
+	branch = master
+[submodule "datagestion"]
+	path = datagestion
+	url = git@github.com:ptut-morpx/datagestion.git
+	branch = master
