@@ -2,9 +2,10 @@ from swissround.tournament.Tournament import Tournament
 from copy import deepcopy
 from datagestion.evolution import evolution
 from datagestion.io import io
+from morpx.swissroundwrapper import Morpx
 
 
-def run(iteration, Game):
+def run(iteration):
 	try:
 		rank, toID = io.retrieve()
 		generator = evolution.Generator(rank, 32)
@@ -19,7 +20,7 @@ def run(iteration, Game):
 				player.hasPlayed.clear()
 				player.score = 0
 
-			tournament = Tournament(deepcopy(generator.ranking), Game, 7)
+			tournament = Tournament(deepcopy(generator.ranking), Morpx, 7)
 			for loop in range(tournament.nbRounds):
 				tournament.createRound()
 				tournament.playRound()
