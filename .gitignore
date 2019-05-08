@@ -1,3 +1,9 @@
+# data gestion
+data/log/log*
+data/ranking.pickle
+data/winner.pickle
+data/toID.int
+
 # Pycharm
 .idea/
 
