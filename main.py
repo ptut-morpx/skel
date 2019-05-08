@@ -4,7 +4,7 @@ from datagestion.evolution import evolution
 from datagestion.io import io
 
 
-def run(iteration):
+def run(iteration, Game):
 	try:
 		rank, toID = io.retrieve()
 		generator = evolution.Generator(rank, 32)
