@@ -23,7 +23,7 @@ def run(iteration):
 
 			tournament = Tournament(deepcopy(generator.ranking), Morpx, 7)
 			for loop in range(tournament.nbRounds):
-				print("-----Round {} started-----".format(loop))
+				print("-----Round {} started-----".format(loop+1))
 				tournament.createRound()
 				tournament.playRound()
 				tournament.updateRank()
