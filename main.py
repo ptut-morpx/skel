@@ -16,12 +16,14 @@ def run(iteration):
 
 	try:
 		for i in range(iteration):
+			print("----------Tournament {} started----------".format(toID))
 			for player in generator.ranking:
 				player.hasPlayed.clear()
 				player.score = 0
 
 			tournament = Tournament(deepcopy(generator.ranking), Morpx, 7)
 			for loop in range(tournament.nbRounds):
+				print("-----Round {} started-----".format(loop))
 				tournament.createRound()
 				tournament.playRound()
 				tournament.updateRank()
